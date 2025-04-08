@@ -8,7 +8,7 @@ const certificates = [
     },
     {
         title: "Apliman Internship",
-        image: "assets/certificates/Aplimann.png",
+        image: "assets/certificates/aplimann.png",
         issuer: "Apliman's HR, Karim Shaaito",
         date: "April 1st 2024",
         description: "Full Stack Development"
