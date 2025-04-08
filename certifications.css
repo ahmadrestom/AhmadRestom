@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    background-color: #171717;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+h1{
+  margin-bottom: 100px;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+          circle farthest-side at 0% 50%,
+          #282828 23.5%,
+          rgba(255, 170, 0, 0) 0
+        )
+        21px 30px,
+      radial-gradient(
+          circle farthest-side at 0% 50%,
+          #27AE60 24%,
+          rgba(240, 166, 17, 0) 0
+        )
+        19px 30px,
+      linear-gradient(
+          #282828 14%,
+          rgba(240, 166, 17, 0) 0,
+          rgba(240, 166, 17, 0) 85%,
+          #282828 0
+        )
+        0 0,
+      linear-gradient(
+          150deg,
+          #282828 24%,
+          #27AE60 0,
+          #27AE60 26%,
+          rgba(240, 166, 17, 0) 0,
+          rgba(240, 166, 17, 0) 74%,
+          #27AE60 0,
+          #27AE60 76%,
+          #282828 0
+        )
+        0 0,
+      linear-gradient(
+          30deg,
+          #282828 24%,
+          #27AE60 0,
+          #27AE60 26%,
+          rgba(240, 166, 17, 0) 0,
+          rgba(240, 166, 17, 0) 74%,
+          #27AE60 0,
+          #27AE60 76%,
+          #282828 0
+        )
+        0 0,
+      linear-gradient(90deg, #27AE60 2%, #282828 0, #282828 98%, #27AE60 0%) 0 0
+        #282828;
+    background-size: 40px 60px;
+}
+
+  .certificates-section {
+    z-index: 1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    justify-items: center;
+  }
+  .certificate-card {
+    perspective: 1000px;
+    width: 500px;
+    height: 400px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .certificate-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-front img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Soft shadow for image */
+}
+  
+  .card-front p {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #111;
+  }
+
+  .card-front::before,
+.card-back::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(135deg, #27ae60, #f4d03f, #f39c12);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+  
+  
+
+  
+
