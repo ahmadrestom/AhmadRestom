@@ -1,4 +1,6 @@
-
+function toggleMenu() {
+    document.getElementById("navlist").classList.toggle("active");
+  }
 window.addEventListener("load", function () {
     setTimeout(function() {
       document.getElementById("loader").style.display = "none"; 
@@ -6,7 +8,7 @@ window.addEventListener("load", function () {
       mainContent.style.visibility = "visible";
       document.body.classList.add("loaded");
   
-    }, 2000);
+    }, 1);
   });
 
 document.addEventListener("DOMContentLoaded", function () {
