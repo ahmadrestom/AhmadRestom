@@ -1,6 +1,26 @@
-function toggleMenu() {
-    document.getElementById("navlist").classList.toggle("active");
-  }
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("navlist");
+
+    hamburger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      console.log("Hamburger clicked");
+      mobileMenu.classList.toggle("active");
+    });
+    mobileMenu.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  
+    document.addEventListener("click", function () {
+      if (mobileMenu.classList.contains("active")) {
+        mobileMenu.classList.remove("active");
+      }
+    });
+  });
+  
+
+
+
 window.addEventListener("load", function () {
     setTimeout(function() {
       document.getElementById("loader").style.display = "none"; 

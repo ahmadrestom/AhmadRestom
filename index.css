@@ -1,7 +1,6 @@
 body {
     background-color: #171717;
     margin: 0;
-    border: 2px solid green;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -154,19 +153,7 @@ html {
         opacity: 0;
     }
 
-    5% {
-        opacity: 0.1;
-    }
-
-    10% {
-        opacity: 0.15;
-    }
-
-    20% {
-        opacity: 0.2;
-    }
-
-    40% {
+    30% {
         opacity: 0.4;
     }
 
@@ -174,7 +161,7 @@ html {
         opacity: 0.6;
     }
 
-    80% {
+    90% {
         opacity: 0.8;
     }
 
@@ -409,28 +396,45 @@ main {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: #fff;
 }
 
 @media(max-width: 768px) {
     .img-div {
         display: none;
     }
-    
-    .nav-list {
+
+    .nav-list{
         display: none;
-        flex-direction: column;
-        background-color: #fff;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        padding: 20px;
     }
+
+    .nav-list.active{
+        display: flex;
+        padding-top: 30px;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-color:#171717;
+        right: 0;
+        top: 0;
+        position: absolute;
+        width: 30%;
+        height: 60%;
+        z-index: 1000
+    }
+    .nav-list li a{
+        color: #27AE60;
+    }
+
     .hamburger {
         display: block;
       }
     .nav-list.active{
         display: flex;
+    }
+    .nav-list li:hover::after {
+        width: 0%;
+    
     }
 
     header {
@@ -492,12 +496,20 @@ main {
     font-size: 30px;
 }
 
-.info-container {
+.info-container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 100px;
     flex-wrap: wrap;
     margin-top: 40px;
+}
+@media(max-width: 1000px){
+    .info-container{
+        flex-direction: column;
+        
+        align-items: center;
+    }
 }
 
 .info-item {
@@ -540,12 +552,15 @@ main {
     cursor: pointer;
 }
 
+
+
 #services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 30px 50px 40px 50px;
+    
 }
 
 #services h3 {
@@ -559,6 +574,7 @@ main {
     flex-direction: row;
     gap: 50px;
     flex-wrap: nowrap;
+    
 }
 
 .service-item {
@@ -571,6 +587,7 @@ main {
     padding-top: 40px;
     position: relative;
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .service-item p {
@@ -582,6 +599,14 @@ main {
     cursor: pointer;
     background-color: #191919;
 
+}
+@media(max-width: 1300px){
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .service-item::after {
@@ -647,6 +672,33 @@ main {
 .skill span {
     color: #4f4f4f;
     font-size: 23px;
+}
+
+@media(max-width: 1000px){
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+}
+@media(max-width: 600px){
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill{
+        width: 70%;
+        height: 100%;
+    }
+    .skill:not(:last-child){
+        border-bottom: 3px solid #4f4f4f;
+        padding-bottom: 20px;
+    }
+
 }
 
 #form {
