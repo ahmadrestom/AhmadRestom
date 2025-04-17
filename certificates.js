@@ -152,15 +152,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const certificatesGrid = document.getElementById("certificates-grid");
 
     certificates.forEach(cert => {
-        // Create a certificate card element
         const certificateCard = document.createElement("div");
         certificateCard.classList.add("certificate-card");
 
-        // Create the card-inner element
         const cardInner = document.createElement("div");
         cardInner.classList.add("card-inner");
-
-        // Create the card-front element
         const cardFront = document.createElement("div");
         cardFront.classList.add("card-front");
         cardFront.innerHTML = `
@@ -168,7 +164,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>${cert.title}</p>
         `;
 
-        // Create the card-back element
         const cardBack = document.createElement("div");
         cardBack.classList.add("card-back");
         cardBack.innerHTML = `
@@ -177,14 +172,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Description: ${cert.description}</p>
         `;
 
-        // Append front and back to the card-inner
         cardInner.appendChild(cardFront);
         cardInner.appendChild(cardBack);
 
-        // Append card-inner to the certificate card
         certificateCard.appendChild(cardInner);
-
-        // Append the certificate card to the grid
         certificatesGrid.appendChild(certificateCard);
     });
 });
