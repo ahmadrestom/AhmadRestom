@@ -246,7 +246,6 @@ nav {
 
 .dropdown-content li:hover::after {
     width: 0%;
-
 }
 
 .dropdown-content li a {
@@ -987,7 +986,7 @@ footer {
     margin-top: 10px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 600px) {/*/*/
     .skills {
         display: flex;
         flex-direction: column;
@@ -1017,5 +1016,9 @@ footer {
     }
     .service-item{
         width: 240px;
+    }
+    .dropdown-content{
+        left: auto;
+        right: 0;
     }
 }
