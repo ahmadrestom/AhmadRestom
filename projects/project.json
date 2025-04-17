@@ -1,0 +1,95 @@
+{
+    "recipe-app": {
+        "title": "🍲 Recipe Application",
+        "images": [
+            "../assets/images/RecipeApp1.png",
+            "../assets/images/RecipeApp2.png",
+            "../assets/images/RecipeApp3.png"
+        ],
+        "description": "A clean, cross-platform recipe app designed for food lovers. Users can explore, post, and review recipes with vibrant images. Built with Flutter for smooth mobile experience and Spring Boot for secure, scalable backend operations.",
+        "tech": [
+            "Flutter (for UI and cross-platform experience)",
+            "Java Spring Boot (backend REST APIs)",
+            "Firebase (Notifications)",
+            "JWT Authentication (secure login/register)",
+            "SupaBase (online storage)",
+            "MySQL (relational database)"
+        ],
+        "features": [
+            "🔐 Auth system with hashed passwords & JWT",
+            "📸 Upload and preview recipe photos",
+            "🧑‍🍳 View detailed recipes with instructions",
+            "💬 Add reviews and read community feedback",
+            "📱 Mobile-optimized responsive layout",
+            "💾 Save your favorite recipes for easy access later",
+            "📊 Display nutritional facts for each recipe, including calories, proteins, fats, etc"
+        ],
+        "github": "https://github.com/ahmadrestom/recipe_frontend"
+    },
+    "invoice-tracker-system": {
+        "title": "🏪 Supermarket Invoice Tracker System",
+        "images": [
+            "../assets/images/invoice1.png",
+            "../assets/images/invoice2.png",
+            "../assets/images/invoice3.png"
+        ],
+        "description": "A clean, cross-platform recipe app designed for food lovers. Users can explore, post, and review recipes with vibrant images. Built with Flutter for smooth mobile experience and Spring Boot for secure, scalable backend operations.",
+        "tech": [
+            "Flutter (for UI and cross-platform experience)",
+            "Java Spring Boot (backend REST APIs)",
+            "JWT Authentication (secure login/register)",
+            "MySQL (relational database)"
+        ],
+        "features": [
+            "👥 Customer management with invoice history",
+            "📦 Item management with live stock tracking",
+            "🧾 Create and manage invoices with selected items",
+            "📉 Auto-update inventory when items are purchased",
+            "📁 Category management for better item organization",
+            "🚚 Supplier management and restocking system",
+            "🔍 Search and filter items, customers, or invoices"
+        ],
+        "github": "https://github.com/ahmadrestom/recipe_frontend"
+    },
+    "retrodiner": {
+        "title": "🍔 RetroDiner Website",
+        "images": [
+            "../assets/images/Retrodiner1.png",
+            "../assets/images/Retrodiner2.png",
+            "../assets/images/Retrodiner3.png"
+        ],
+        "description": "RetroDiner is a stylish and fully functional restaurant website that brings the nostalgic diner experience online. Users can browse the menu, place orders, make table reservations, and leave feedback — all from a clean and responsive interface. The site is powered by PHP and MySQLi for dynamic content and data handling.",
+        "tech": [
+            "HTML5 & CSS3 (Modern, responsive layout)",
+            "JavaScript (Client-side interactivity)",
+            "PHP (Backend logic and server-side routing)",
+            "MySQLi (Database integration for orders, feedback, reservations)"
+        ],
+        "features": [
+            "📜 Interactive digital menu with categories and pricing",
+            "🛒 Order system to select and place food orders",
+            "📅 Online table reservation with date/time selection",
+            "💬 Feedback form for customer reviews and suggestions",
+            "ℹ️ About page with diner history and team info",
+            "📱 Fully responsive design for mobile and tablet users"
+        ],
+        "github": "https://github.com/ahmadrestom/retrodiner"
+    },
+    "digital-ordering-system": {
+        "title": "🧾 Digital Ordering System",
+        "images": [
+            "../assets/images/digital-ordering-system.jpg"
+        ],
+        "description": "An efficient and user-friendly digital ordering system built for restaurants and cafes. Customers can browse the menu, place orders, and track their order status in real time. The system enhances in-house service by replacing paper menus and manual ordering with a sleek digital interface.",
+        "tech": [
+            "Flutter (for UI and cross-platform experience)"
+        ],
+        "features": [
+            "📱 Interactive digital menu with photos and descriptions",
+            "🛒 Add-to-cart and real-time order submission",
+            "👤 Login and authentication for personalized experience",
+            "🧑‍🍳 Kitchen view for order preparation tracking"
+        ],
+        "github": "https://github.com/XpertBotTeam/DigitalMenuandOrderingSystem"
+    }
+}
