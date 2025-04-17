@@ -1015,13 +1015,13 @@ footer {
         gap: 15%;
     }
     .service-item{
-        width: 240px;
+        width: 270px;
     }
     .dropdown-content{
         left: auto;
         right: 0;
     }
     .about-div-inner p {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
